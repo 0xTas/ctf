@@ -64,7 +64,7 @@ I know that images can hold a lot of useful metadata, so I used a command called
 
 `tas@kali$ exiftool ****.PNg`
 
-![Exiftool In Action](https://i.imgur.com/snhxXzC.png)
+![Exiftool In Action](https://i.imgur.com/MylU91w.png)
 
 <details>
 <summary>Author Name</summary>
