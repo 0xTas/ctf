@@ -1,0 +1,16 @@
+# Nmap 7.92 scan initiated Sat Jun 11 00:06:18 2022 as: nmap -vv -sC -sV -T4 -p- -oN nmap/full.log 10.10.232.191
+Nmap scan report for 10.10.232.191
+Host is up, received conn-refused (0.16s latency).
+Scanned at 2022-06-11 00:06:25 PDT for 597s
+Not shown: 65533 closed tcp ports (conn-refused)
+PORT     STATE SERVICE REASON  VERSION
+80/tcp   open  http    syn-ack Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Apache2 Ubuntu Default Page: It works
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+6379/tcp open  redis   syn-ack Redis key-value store 6.0.7
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jun 11 00:16:22 2022 -- 1 IP address (1 host up) scanned in 604.04 seconds
