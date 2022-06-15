@@ -48,7 +48,11 @@ It came out to: 47, 80, 73, 51, 84, 46, 80, 78, 103. <br>
 Heading to [CyberChef](https://gchq.github.io/CyberChef/), I plugged these values in and converted them from decimal to ASCII. <br>
 Sure enough, I was met with a decoded message which appeared to be a filename: <br>
 
-> Answer: /P**T.PNg
+<details>
+<summary>Filename</summary>
+
+> Answer: /PI3T.PNg
+</details>
 
 ---
 
@@ -62,7 +66,11 @@ I know that images can hold a lot of useful metadata, so I used a command called
 
 ![Exiftool In Action](https://i.imgur.com/snhxXzC.png)
 
-> Answer: P**t M******n
+<details>
+<summary>Author Name</summary>
+
+> Answer: Piet Mondrian
+</details>
 
 ---
 
