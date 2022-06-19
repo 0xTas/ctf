@@ -27,7 +27,7 @@ Fairly simple question, easy to Google if needed, but I do have a little bit of 
 Prototype pollution is a vulnerability that takes advantage of the way that objects in languages like Javascript inherit properties and methods from their "prototype" objects. <br>
 
 Prototype pollution occurs when an attacker can inject malicious code to change the properties and methods of the prototype object itself. <br>
-In Javascript, there is a property, "__proto__", which can be used to access the prototype object, and potentially alter its methods. <br>
+In Javascript, there is a property, "\_\_proto\_\_", which can be used to access the prototype object, and potentially alter its methods. <br>
 If an attacker can inject malicious code using the __proto__ property, they can redefine the global methods that apply to all instances of that object, thus polluting the namespace with arbitrary code. <br>
 It is also possible to alter properties of objects with Prototype Pollution, as long as the specific instance of the target object does not explicity overwrite this property with its own value, which would override the polluted value. <br>
 
