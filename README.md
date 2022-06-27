@@ -1,2 +1,2 @@
 # CTF
-My notes/writeups from various CTF challenges that I have completed.
+My notes/writeups from various CTF platforms/challenges that I have completed.
