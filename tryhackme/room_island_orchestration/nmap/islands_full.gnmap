@@ -1,0 +1,5 @@
+# Nmap 7.92 scan initiated Sun Jun 26 05:55:55 2022 as: nmap -vv -sC -sV -p- -T4 -oA nmap/islands_full islands.thm
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.238.18 (islands.thm)	Status: Up
+Host: 10.10.238.18 (islands.thm)	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.2.22 ((Ubuntu))/, 8443/open/tcp//ssl|https-alt///	Ignored State: closed (65532)
+# Nmap done at Sun Jun 26 05:59:27 2022 -- 1 IP address (1 host up) scanned in 211.95 seconds
