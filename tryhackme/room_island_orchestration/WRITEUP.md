@@ -95,12 +95,12 @@ After that I decided to put together a simple [python script](https://github.com
 ![lfi.py Exploit Script](https://i.imgur.com/R4aeioi.png)
 
 My script takes each entry from an [LFI wordlist](https://github.com/0xTas/ctf/blob/main/tryhackme/room_island_orchestration/lfipaths.txt) and tries to exploit the LFI vulnerability to read that file. 
-Then, if successful, it separates the file's contents from the rest of the page's HTML, and appends it to a log file for me to review. <br>
+Then, if successful, it separates the file's contents from the rest of the page's HTML, and prints it to STDOUT for me to review. <br>
 
 I ran the script with the following commands: <br>
 
 `chmod +x lfi.py` <br>
-`./lfi.py http://islands.thm /usr/share/wordlists/lfiPaths.txt` <br>
+`./lfi.py http://islands.thm /usr/share/wordlists/lfiPaths.txt > lfi.log` <br>
 
 After a minute or so, I had a log file nearly 6000-lines long, full of potentially-interesting system files that were leaked from this server. <br>
 
