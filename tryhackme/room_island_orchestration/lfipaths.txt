@@ -227,9 +227,9 @@
 /var/log/yum.log
 /var/mysql.log
 /var/run/utmp
-/var/run/secrets/kubernetes.io/serviceaccount
-/run/secrets/kubernetes.io/serviceaccount
-/secrets/kubernetes.io/serviceaccount
+/var/run/secrets/kubernetes.io/serviceaccount/token
+/var/run/secrets/kubernetes.io/serviceaccount/namespace
+/var/run/secrets/kubernetes.io/serviceaccount/ca.crt
 /var/spool/cron/crontabs/root
 /var/webmin/miniserv.log
 /var/www/log/access_log
