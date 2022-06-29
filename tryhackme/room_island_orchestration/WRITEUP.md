@@ -179,11 +179,12 @@ From here, I was able to list the weakly-encoded secrets for the current namespa
 
 To my surprise, the output of this command gave me the flag encoded in base64. <br>
 
-I copied/pasted it, echoed and piped it into `base64 -d`, and received the raw flag, completing this fun enumeration challenge! <br>
+I copied/pasted it, echoed and piped it into `base64 -d`, and received the raw flag, thus completing this fun enumeration challenge! <br>
 
 ![Challenge Complete!](https://i.imgur.com/w2I3Lkn.png)
 
 <br>
+
 > Answer: flag{08be****************************}
 
 ---
