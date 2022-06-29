@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Sun Jun 26 05:55:55 2022 as: nmap -vv -sC -sV -p- -T4 -oA nmap/islands_full islands.thm -->
+<nmaprun scanner="nmap" args="nmap -vv -sC -sV -p- -T4 -oA nmap/islands_full islands.thm" start="1656248155" startstr="Sun Jun 26 05:55:55 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1656248155"/>
+<taskend task="NSE" time="1656248155"/>
+<taskbegin task="NSE" time="1656248155"/>
+<taskend task="NSE" time="1656248155"/>
+<taskbegin task="NSE" time="1656248155"/>
+<taskend task="NSE" time="1656248155"/>
+<taskbegin task="Ping Scan" time="1656248155"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.238.18" addrtype="ipv4"/>
+<hostnames>
+<hostname name="islands.thm" type="user"/>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1656248155" extrainfo="1 total hosts"/>
+<taskbegin task="SYN Stealth Scan" time="1656248156"/>
+<taskprogress task="SYN Stealth Scan" time="1656248187" percent="25.21" remaining="92" etc="1656248279"/>
+<taskprogress task="SYN Stealth Scan" time="1656248217" percent="60.13" remaining="41" etc="1656248257"/>
+<taskend task="SYN Stealth Scan" time="1656248254" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1656248254"/>
+<taskend task="Service scan" time="1656248360" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1656248360"/>
+<taskend task="NSE" time="1656248366"/>
+<taskbegin task="NSE" time="1656248366"/>
+<taskend task="NSE" time="1656248367"/>
+<taskbegin task="NSE" time="1656248367"/>
+<taskend task="NSE" time="1656248367"/>
+<host starttime="1656248156" endtime="1656248367"><status state="up" reason="timestamp-reply" reason_ttl="61"/>
+<address addr="10.10.238.18" addrtype="ipv4"/>
+<hostnames>
+<hostname name="islands.thm" type="user"/>
+<hostname name="islands.thm" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="reset" count="65532" proto="tcp" ports="1-21,23-79,81-8442,8444-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 9f:ae:04:9e:f0:75:ed:b7:39:80:a0:d8:7f:bd:61:06 (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCpKksU81PRNTKP1wxKXB9jq0Yk6id6JCuj4gYTAPk932sjBdUV4OhoMBP1m2cITHGWBWiE02KzRSkgL9X0FZL6CJRxo09N2uHXp6XT5+V+VMf1/5B1xgETNdpqgltDpqYudiKpNQzRpkvvtvCntDr+R0/4LWi7CsmII2wYFSnZ8/8UtueRCGue3Mn9oeUp1R+m5yODXfJHgcHmvHsdbx1JX/7dzwI8QSFNhnXcQwRFkRcNJBmYjlMq1SvqXQMzgR70dIv/9zfFIROPyjfLkeGsmLBEflsPmLo8Nt5CxQzUzx5w/PcnRsTv+X6syJXGjS6pD82hgPH/AtZGaNePAvcQjNPzYF2ZWB6WcMWJROMqeWYasava17FZOyEqteIsW0/JeXIZroSJT792OaGH/8nwqkLNmLE2Ab54GjunAeZEdb3MB2qeQ6iszeBCutm+CZr9HI4aRTgmfdCIRPuJJxqQeSCpLb0kNdvt36OFCmTpMMdaj9WSaFbl7Ywvd0WIVn0=&#xa;  256 cf:cb:89:62:99:11:d7:ca:cd:5b:57:78:10:d0:6c:82 (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDJH2hRXWCeM4AC7WvCY/PpWUXdSiNB+E05tW7LGCL0R6WTJLTCKpmKMWdaf3PbDMgPJlR9GzaPhOvUBFZ0uI8U=&#xa;  256 5f:11:10:0d:7c:80:a3:fc:d1:d5:43:4e:49:f9:c8:d2 (ED25519)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPvap+hnXqIVCd8pv3lHrx6kbI2FqAazMvM3mjg2uiE4"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQCpKksU81PRNTKP1wxKXB9jq0Yk6id6JCuj4gYTAPk932sjBdUV4OhoMBP1m2cITHGWBWiE02KzRSkgL9X0FZL6CJRxo09N2uHXp6XT5+V+VMf1/5B1xgETNdpqgltDpqYudiKpNQzRpkvvtvCntDr+R0/4LWi7CsmII2wYFSnZ8/8UtueRCGue3Mn9oeUp1R+m5yODXfJHgcHmvHsdbx1JX/7dzwI8QSFNhnXcQwRFkRcNJBmYjlMq1SvqXQMzgR70dIv/9zfFIROPyjfLkeGsmLBEflsPmLo8Nt5CxQzUzx5w/PcnRsTv+X6syJXGjS6pD82hgPH/AtZGaNePAvcQjNPzYF2ZWB6WcMWJROMqeWYasava17FZOyEqteIsW0/JeXIZroSJT792OaGH/8nwqkLNmLE2Ab54GjunAeZEdb3MB2qeQ6iszeBCutm+CZr9HI4aRTgmfdCIRPuJJxqQeSCpLb0kNdvt36OFCmTpMMdaj9WSaFbl7Ywvd0WIVn0=</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">9fae049ef075edb73980a0d87fbd6106</elem>
+<elem key="bits">3072</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDJH2hRXWCeM4AC7WvCY/PpWUXdSiNB+E05tW7LGCL0R6WTJLTCKpmKMWdaf3PbDMgPJlR9GzaPhOvUBFZ0uI8U=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">cfcb89629911d7cacd5b577810d06c82</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIPvap+hnXqIVCd8pv3lHrx6kbI2FqAazMvM3mjg2uiE4</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">5f11100d7c80a3fcd1d5434e49f9c8d2</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="59"/><service name="http" product="Apache httpd" version="2.2.22" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.22</cpe></service><script id="http-title" output="Best tropical islands"><elem key="title">Best tropical islands</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.2.22 (Ubuntu)"><elem>Apache/2.2.22 (Ubuntu)</elem>
+</script></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="60"/><service name="https-alt" servicefp="SF-Port8443-TCP:V=7.92%T=SSL%I=7%D=6/26%Time=62B857CB%P=x86_64-pc-linux-gnu%r(GetRequest,22F,&quot;HTTP/1\.0\x20403\x20Forbidden\r\nAudit-Id:\x204837ea43-6cc2-46e9-a740-c485e8ae002a\r\nCache-Control:\x20no-cache,\x20private\r\nContent-Type:\x20application/json\r\nX-Content-Type-Options:\x20nosniff\r\nX-Kubernetes-Pf-Flowschema-Uid:\x20a5c8dc51-1beb-4524-9996-fcbdf17ad8d9\r\nX-Kubernetes-Pf-Prioritylevel-Uid:\x209a40dace-d4fe-4ce4-8625-787c338bd84b\r\nDate:\x20Sun,\x2026\x20Jun\x202022\x2012:57:46\x20GMT\r\nContent-Length:\x20185\r\n\r\n{\&quot;kind\&quot;:\&quot;Status\&quot;,\&quot;apiVersion\&quot;:\&quot;v1\&quot;,\&quot;metadata\&quot;:{},\&quot;status\&quot;:\&quot;Failure\&quot;,\&quot;message\&quot;:\&quot;forbidden:\x20User\x20\\\&quot;system:anonymous\\\&quot;\x20cannot\x20get\x20path\x20\\\&quot;/\\\&quot;\&quot;,\&quot;reason\&quot;:\&quot;Forbidden\&quot;,\&quot;details\&quot;:{},\&quot;code\&quot;:403}\n&quot;)%r(HTTPOptions,233,&quot;HTTP/1\.0\x20403\x20Forbidden\r\nAudit-Id:\x20803fc2f6-4776-42ee-a65b-a2d85906d7d6\r\nCache-Control:\x20no-cache,\x20private\r\nContent-Type:\x20application/json\r\nX-Content-Type-Options:\x20nosniff\r\nX-Kubernetes-Pf-Flowschema-Uid:\x20a5c8dc51-1beb-4524-9996-fcbdf17ad8d9\r\nX-Kubernetes-Pf-Prioritylevel-Uid:\x209a40dace-d4fe-4ce4-8625-787c338bd84b\r\nDate:\x20Sun,\x2026\x20Jun\x202022\x2012:57:47\x20GMT\r\nContent-Length:\x20189\r\n\r\n{\&quot;kind\&quot;:\&quot;Status\&quot;,\&quot;apiVersion\&quot;:\&quot;v1\&quot;,\&quot;metadata\&quot;:{},\&quot;status\&quot;:\&quot;Failure\&quot;,\&quot;message\&quot;:\&quot;forbidden:\x20User\x20\\\&quot;system:anonymous\\\&quot;\x20cannot\x20options\x20path\x20\\\&quot;/\\\&quot;\&quot;,\&quot;reason\&quot;:\&quot;Forbidden\&quot;,\&quot;details\&quot;:{},\&quot;code\&quot;:403}\n&quot;)%r(FourOhFourRequest,24A,&quot;HTTP/1\.0\x20403\x20Forbidden\r\nAudit-Id:\x20a978fa3b-d6a3-49b8-b247-3ba85bb7e52d\r\nCache-Control:\x20no-cache,\x20private\r\nContent-Type:\x20application/json\r\nX-Content-Type-Options:\x20nosniff\r\nX-Kubernetes-Pf-Flowschema-Uid:\x20a5c8dc51-1beb-4524-9996-fcbdf17ad8d9\r\nX-Kubernetes-Pf-Prioritylevel-Uid:\x209a40dace-d4fe-4ce4-8625-787c338bd84b\r\nDate:\x20Sun,\x2026\x20Jun\x202022\x2012:57:47\x20GMT\r\nContent-Length:\x20212\r\n\r\n{\&quot;kind\&quot;:\&quot;Status\&quot;,\&quot;apiVersion\&quot;:\&quot;v1\&quot;,\&quot;metadata\&quot;:{},\&quot;status\&quot;:\&quot;Failure\&quot;,\&quot;message\&quot;:\&quot;forbidden:\x20User\x20\\\&quot;system:anonymous\\\&quot;\x20cannot\x20get\x20path\x20\\\&quot;/nice\x20ports,/Trinity\.txt\.bak\\\&quot;\&quot;,\&quot;reason\&quot;:\&quot;Forbidden\&quot;,\&quot;details\&quot;:{},\&quot;code\&quot;:403}\n&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.0 403 Forbidden&#xa;    Audit-Id: a978fa3b-d6a3-49b8-b247-3ba85bb7e52d&#xa;    Cache-Control: no-cache, private&#xa;    Content-Type: application/json&#xa;    X-Content-Type-Options: nosniff&#xa;    X-Kubernetes-Pf-Flowschema-Uid: a5c8dc51-1beb-4524-9996-fcbdf17ad8d9&#xa;    X-Kubernetes-Pf-Prioritylevel-Uid: 9a40dace-d4fe-4ce4-8625-787c338bd84b&#xa;    Date: Sun, 26 Jun 2022 12:57:47 GMT&#xa;    Content-Length: 212&#xa;    {&quot;kind&quot;:&quot;Status&quot;,&quot;apiVersion&quot;:&quot;v1&quot;,&quot;metadata&quot;:{},&quot;status&quot;:&quot;Failure&quot;,&quot;message&quot;:&quot;forbidden: User &quot;system:anonymous&quot; cannot get path &quot;/nice ports,/Trinity.txt.bak&quot;&quot;,&quot;reason&quot;:&quot;Forbidden&quot;,&quot;details&quot;:{},&quot;code&quot;:403}&#xa;  GetRequest: &#xa;    HTTP/1.0 403 Forbidden&#xa;    Audit-Id: 4837ea43-6cc2-46e9-a740-c485e8ae002a&#xa;    Cache-Control: no-cache, private&#xa;    Content-Type: application/json&#xa;    X-Content-Type-Options: nosniff&#xa;    X-Kubernetes-Pf-Flowschema-Uid: a5c8dc51-1beb-4524-9996-fcbdf17ad8d9&#xa;    X-Kubernetes-Pf-Prioritylevel-Uid: 9a40dace-d4fe-4ce4-8625-787c338bd84b&#xa;    Date: Sun, 26 Jun 2022 12:57:46 GMT&#xa;    Content-Length: 185&#xa;    {&quot;kind&quot;:&quot;Status&quot;,&quot;apiVersion&quot;:&quot;v1&quot;,&quot;metadata&quot;:{},&quot;status&quot;:&quot;Failure&quot;,&quot;message&quot;:&quot;forbidden: User &quot;system:anonymous&quot; cannot get path &quot;/&quot;&quot;,&quot;reason&quot;:&quot;Forbidden&quot;,&quot;details&quot;:{},&quot;code&quot;:403}&#xa;  HTTPOptions: &#xa;    HTTP/1.0 403 Forbidden&#xa;    Audit-Id: 803fc2f6-4776-42ee-a65b-a2d85906d7d6&#xa;    Cache-Control: no-cache, private&#xa;    Content-Type: application/json&#xa;    X-Content-Type-Options: nosniff&#xa;    X-Kubernetes-Pf-Flowschema-Uid: a5c8dc51-1beb-4524-9996-fcbdf17ad8d9&#xa;    X-Kubernetes-Pf-Prioritylevel-Uid: 9a40dace-d4fe-4ce4-8625-787c338bd84b&#xa;    Date: Sun, 26 Jun 2022 12:57:47 GMT&#xa;    Content-Length: 189&#xa;    {&quot;kind&quot;:&quot;Status&quot;,&quot;apiVersion&quot;:&quot;v1&quot;,&quot;metadata&quot;:{},&quot;status&quot;:&quot;Failure&quot;,&quot;message&quot;:&quot;forbidden: User &quot;system:anonymous&quot; cannot options path &quot;/&quot;&quot;,&quot;reason&quot;:&quot;Forbidden&quot;,&quot;details&quot;:{},&quot;code&quot;:403}"><elem key="FourOhFourRequest">&#xa;    HTTP/1.0 403 Forbidden&#xa;    Audit-Id: a978fa3b-d6a3-49b8-b247-3ba85bb7e52d&#xa;    Cache-Control: no-cache, private&#xa;    Content-Type: application/json&#xa;    X-Content-Type-Options: nosniff&#xa;    X-Kubernetes-Pf-Flowschema-Uid: a5c8dc51-1beb-4524-9996-fcbdf17ad8d9&#xa;    X-Kubernetes-Pf-Prioritylevel-Uid: 9a40dace-d4fe-4ce4-8625-787c338bd84b&#xa;    Date: Sun, 26 Jun 2022 12:57:47 GMT&#xa;    Content-Length: 212&#xa;    {&quot;kind&quot;:&quot;Status&quot;,&quot;apiVersion&quot;:&quot;v1&quot;,&quot;metadata&quot;:{},&quot;status&quot;:&quot;Failure&quot;,&quot;message&quot;:&quot;forbidden: User &quot;system:anonymous&quot; cannot get path &quot;/nice ports,/Trinity.txt.bak&quot;&quot;,&quot;reason&quot;:&quot;Forbidden&quot;,&quot;details&quot;:{},&quot;code&quot;:403}</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.0 403 Forbidden&#xa;    Audit-Id: 4837ea43-6cc2-46e9-a740-c485e8ae002a&#xa;    Cache-Control: no-cache, private&#xa;    Content-Type: application/json&#xa;    X-Content-Type-Options: nosniff&#xa;    X-Kubernetes-Pf-Flowschema-Uid: a5c8dc51-1beb-4524-9996-fcbdf17ad8d9&#xa;    X-Kubernetes-Pf-Prioritylevel-Uid: 9a40dace-d4fe-4ce4-8625-787c338bd84b&#xa;    Date: Sun, 26 Jun 2022 12:57:46 GMT&#xa;    Content-Length: 185&#xa;    {&quot;kind&quot;:&quot;Status&quot;,&quot;apiVersion&quot;:&quot;v1&quot;,&quot;metadata&quot;:{},&quot;status&quot;:&quot;Failure&quot;,&quot;message&quot;:&quot;forbidden: User &quot;system:anonymous&quot; cannot get path &quot;/&quot;&quot;,&quot;reason&quot;:&quot;Forbidden&quot;,&quot;details&quot;:{},&quot;code&quot;:403}</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.0 403 Forbidden&#xa;    Audit-Id: 803fc2f6-4776-42ee-a65b-a2d85906d7d6&#xa;    Cache-Control: no-cache, private&#xa;    Content-Type: application/json&#xa;    X-Content-Type-Options: nosniff&#xa;    X-Kubernetes-Pf-Flowschema-Uid: a5c8dc51-1beb-4524-9996-fcbdf17ad8d9&#xa;    X-Kubernetes-Pf-Prioritylevel-Uid: 9a40dace-d4fe-4ce4-8625-787c338bd84b&#xa;    Date: Sun, 26 Jun 2022 12:57:47 GMT&#xa;    Content-Length: 189&#xa;    {&quot;kind&quot;:&quot;Status&quot;,&quot;apiVersion&quot;:&quot;v1&quot;,&quot;metadata&quot;:{},&quot;status&quot;:&quot;Failure&quot;,&quot;message&quot;:&quot;forbidden: User &quot;system:anonymous&quot; cannot options path &quot;/&quot;&quot;,&quot;reason&quot;:&quot;Forbidden&quot;,&quot;details&quot;:{},&quot;code&quot;:403}</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (application/json)."></script><script id="ssl-cert" output="Subject: commonName=minikube/organizationName=system:masters&#xa;Subject Alternative Name: DNS:minikubeCA, DNS:control-plane.minikube.internal, DNS:kubernetes.default.svc.cluster.local, DNS:kubernetes.default.svc, DNS:kubernetes.default, DNS:kubernetes, DNS:localhost, IP Address:192.168.49.2, IP Address:10.96.0.1, IP Address:127.0.0.1, IP Address:10.0.0.1&#xa;Issuer: commonName=minikubeCA&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2022-01-05T23:39:08&#xa;Not valid after:  2025-01-05T23:39:08&#xa;MD5:   6c2d 583d a93a c670 295b 25d1 c210 72f9&#xa;SHA-1: 795d 7485 acbd c4c8 05e7 094e 029f 27fd 4493 3570&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIID3DCCAsSgAwIBAgIBAjANBgkqhkiG9w0BAQsFADAVMRMwEQYDVQQDEwptaW5p&#xa;a3ViZUNBMB4XDTIyMDEwNTIzMzkwOFoXDTI1MDEwNTIzMzkwOFowLDEXMBUGA1UE&#xa;ChMOc3lzdGVtOm1hc3RlcnMxETAPBgNVBAMTCG1pbmlrdWJlMIIBIjANBgkqhkiG&#xa;9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuAxR+SsV/1UNt9xi1lXV+Xdo7rB6/65bKIaJ&#xa;yHa/Lbo09mA8CCI7E5aNbmc5fTLH6lmDsRKgHvgnyqjuwsyXynj9TYguaiwN4Azl&#xa;k8oCd0CQ4EsSByshC49nnaHjd600CoBpI20RUQPk4A8bDcnBLbKzW5EgYxN2loax&#xa;L8fYoWl2qmsoJRBi2OWtvOxyFHbmpYW64o2Bv2GU+lp8osgVCVI91vX1+mOPH/CH&#xa;am5BHnZk+PGMJo0hZXlLf/ABGlCHypRBjdjz7dsBiCQD3BQmM0bs9CNYYIRXO1TD&#xa;h/hQVQy2fI/vfR2o0xZyGRX/cbE+vwmFZm2yJAm1q0OzUDx7RQIDAQABo4IBHjCC&#xa;ARowDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcD&#xa;AjAMBgNVHRMBAf8EAjAAMB8GA1UdIwQYMBaAFPAKP1Pl/m85CseQAnTU3n6Fgy4Q&#xa;MIG5BgNVHREEgbEwga6CCm1pbmlrdWJlQ0GCH2NvbnRyb2wtcGxhbmUubWluaWt1&#xa;YmUuaW50ZXJuYWyCJGt1YmVybmV0ZXMuZGVmYXVsdC5zdmMuY2x1c3Rlci5sb2Nh&#xa;bIIWa3ViZXJuZXRlcy5kZWZhdWx0LnN2Y4ISa3ViZXJuZXRlcy5kZWZhdWx0ggpr&#xa;dWJlcm5ldGVzgglsb2NhbGhvc3SHBMCoMQKHBApgAAGHBH8AAAGHBAoAAAEwDQYJ&#xa;KoZIhvcNAQELBQADggEBAAi1PSr90fSA/DM4VGDysPm3eInhcmiHCwq6VIKpBhju&#xa;6/UK5A/sZwn6aZCn8jTd4gGYyJGfcj8GJNKDVc/bAsFhG4Ot5pM58J1Qks0+UCsj&#xa;rokraGCZhmB6EseWi1a+Bv1ZFxR1vLDBjehXxHrlV8rUEztQnjBzanNiEhHtBkhs&#xa;ncG4lah2VdHRJO+PuDfLhL73eDYIgHNfSk+gvB62umtmtMkGrga4aiGRxXxpjKS5&#xa;ILJvdR4pZ2Ez5ilVNSdzv4whhbCJeJzegDdvwbUASWGTaV8LB7dUbLWGPNeIQcl+&#xa;kn7y+oLMzQg3jtEK14pJwyX4EVV9o7t047sDKFisyrY=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">minikube</elem>
+<elem key="organizationName">system:masters</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">minikubeCA</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">B80C51F92B15FF550DB7DC62D655D5F97768EEB07AFFAE5B288689C876BF2DBA34F6603C08223B13968D6E67397D32C7EA5983B112A01EF827CAA8EEC2CC97CA78FD4D882E6A2C0DE00CE593CA02774090E04B12072B210B8F679DA1E377AD340A8069236D115103E4E00F1B0DC9C12DB2B35B91206313769686B12FC7D8A16976AA6B28251062D8E5ADBCEC721476E6A585BAE28D81BF6194FA5A7CA2C81509523DD6F5F5FA638F1FF0876A6E411E7664F8F18C268D2165794B7FF0011A5087CA94418DD8F3EDDB01882403DC14263346ECF423586084573B54C387F850550CB67C8FEF7D1DA8D316721915FF71B13EBF0985666DB22409B5AB43B3503C7B45</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:F0:0A:3F:53:E5:FE:6F:39:0A:C7:90:02:74:D4:DE:7E:85:83:2E:10&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:minikubeCA, DNS:control-plane.minikube.internal, DNS:kubernetes.default.svc.cluster.local, DNS:kubernetes.default.svc, DNS:kubernetes.default, DNS:kubernetes, DNS:localhost, IP Address:192.168.49.2, IP Address:10.96.0.1, IP Address:127.0.0.1, IP Address:10.0.0.1</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2022-01-05T23:39:08</elem>
+<elem key="notAfter">2025-01-05T23:39:08</elem>
+</table>
+<elem key="md5">6c2d583da93ac670295b25d1c21072f9</elem>
+<elem key="sha1">795d7485acbdc4c805e7094e029f27fd44933570</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIID3DCCAsSgAwIBAgIBAjANBgkqhkiG9w0BAQsFADAVMRMwEQYDVQQDEwptaW5p&#xa;a3ViZUNBMB4XDTIyMDEwNTIzMzkwOFoXDTI1MDEwNTIzMzkwOFowLDEXMBUGA1UE&#xa;ChMOc3lzdGVtOm1hc3RlcnMxETAPBgNVBAMTCG1pbmlrdWJlMIIBIjANBgkqhkiG&#xa;9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuAxR+SsV/1UNt9xi1lXV+Xdo7rB6/65bKIaJ&#xa;yHa/Lbo09mA8CCI7E5aNbmc5fTLH6lmDsRKgHvgnyqjuwsyXynj9TYguaiwN4Azl&#xa;k8oCd0CQ4EsSByshC49nnaHjd600CoBpI20RUQPk4A8bDcnBLbKzW5EgYxN2loax&#xa;L8fYoWl2qmsoJRBi2OWtvOxyFHbmpYW64o2Bv2GU+lp8osgVCVI91vX1+mOPH/CH&#xa;am5BHnZk+PGMJo0hZXlLf/ABGlCHypRBjdjz7dsBiCQD3BQmM0bs9CNYYIRXO1TD&#xa;h/hQVQy2fI/vfR2o0xZyGRX/cbE+vwmFZm2yJAm1q0OzUDx7RQIDAQABo4IBHjCC&#xa;ARowDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcD&#xa;AjAMBgNVHRMBAf8EAjAAMB8GA1UdIwQYMBaAFPAKP1Pl/m85CseQAnTU3n6Fgy4Q&#xa;MIG5BgNVHREEgbEwga6CCm1pbmlrdWJlQ0GCH2NvbnRyb2wtcGxhbmUubWluaWt1&#xa;YmUuaW50ZXJuYWyCJGt1YmVybmV0ZXMuZGVmYXVsdC5zdmMuY2x1c3Rlci5sb2Nh&#xa;bIIWa3ViZXJuZXRlcy5kZWZhdWx0LnN2Y4ISa3ViZXJuZXRlcy5kZWZhdWx0ggpr&#xa;dWJlcm5ldGVzgglsb2NhbGhvc3SHBMCoMQKHBApgAAGHBH8AAAGHBAoAAAEwDQYJ&#xa;KoZIhvcNAQELBQADggEBAAi1PSr90fSA/DM4VGDysPm3eInhcmiHCwq6VIKpBhju&#xa;6/UK5A/sZwn6aZCn8jTd4gGYyJGfcj8GJNKDVc/bAsFhG4Ot5pM58J1Qks0+UCsj&#xa;rokraGCZhmB6EseWi1a+Bv1ZFxR1vLDBjehXxHrlV8rUEztQnjBzanNiEhHtBkhs&#xa;ncG4lah2VdHRJO+PuDfLhL73eDYIgHNfSk+gvB62umtmtMkGrga4aiGRxXxpjKS5&#xa;ILJvdR4pZ2Ez5ilVNSdzv4whhbCJeJzegDdvwbUASWGTaV8LB7dUbLWGPNeIQcl+&#xa;kn7y+oLMzQg3jtEK14pJwyX4EVV9o7t047sDKFisyrY=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+</ports>
+<times srtt="164977" rttvar="1743" to="171949"/>
+</host>
+<taskbegin task="NSE" time="1656248367"/>
+<taskend task="NSE" time="1656248367"/>
+<taskbegin task="NSE" time="1656248367"/>
+<taskend task="NSE" time="1656248367"/>
+<taskbegin task="NSE" time="1656248367"/>
+<taskend task="NSE" time="1656248367"/>
+<runstats><finished time="1656248367" timestr="Sun Jun 26 05:59:27 2022" summary="Nmap done at Sun Jun 26 05:59:27 2022; 1 IP address (1 host up) scanned in 211.95 seconds" elapsed="211.95" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
