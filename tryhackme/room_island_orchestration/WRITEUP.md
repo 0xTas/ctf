@@ -130,9 +130,9 @@ When this had finished, I noticed that it had also identified the LFI vulnerabil
 
 ![Nikto Scan Output (Identifies LFI Vuln)](https://i.imgur.com/T47PYH8.png)
 
-Next I went to Google and looked for a resource to learn about enumerating Kubernetes, and luckily I came across this helpful page: [HackTricks - Pentesting Kubernetes](https://book.hacktricks.xyz/cloud-security/pentesting-kubernetes).
+Next I went to Google and looked for a resource to learn about enumerating Kubernetes, and luckily I came across this helpful page: [HackTricks - Pentesting Kubernetes](https://cloud.hacktricks.xyz/pentesting-cloud/kubernetes-security).
 <br>
-After reading about the [basics of Kubernetes](https://book.hacktricks.xyz/cloud-security/pentesting-kubernetes/kubernetes-basics), which was entirely new to me, I began to read about methods for [enumerating k8s](https://book.hacktricks.xyz/cloud-security/pentesting-kubernetes/kubernetes-enumeration).
+After reading about the [basics of Kubernetes](https://cloud.hacktricks.xyz/pentesting-cloud/kubernetes-security/kubernetes-basics), which was entirely new to me, I began to read about methods for [enumerating k8s](https://cloud.hacktricks.xyz/pentesting-cloud/kubernetes-security/kubernetes-enumeration).
 <br>
 
 I learned that K8s stores credentials, or "secrets", in weakly-encoded base64, and if I could get ahold of a service account token, I might be able to read those secrets straight from the API server running on port 8443. <br>
@@ -159,7 +159,7 @@ Because of this, HackTricks recommends storing the server address and token in e
 
 So I did this, and then began enumerating the k8s API: <br>
 
-(*Note:* I included the `--insecurre-skip-tls-verify=true` option so that I did not need to bother grabbing the ca.cert file) <br> 
+(*Note:* I included the `--insecure-skip-tls-verify=true` option so that I did not need to bother grabbing the ca.cert file) <br> 
 
 `alias k='kubectl --token=$TOKEN --server=$APISERVER --insecure-skip-tls-verify=true'` <br>
 
